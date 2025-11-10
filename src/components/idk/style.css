@@ -1,0 +1,154 @@
+.idk-section {
+  width: 100%;
+  background-color: #f5f5f5;
+  padding: 80px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.idk-header {
+  text-align: center;
+  margin-bottom: 60px;
+  max-width: 800px;
+}
+
+.idk-title {
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.2;
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+.idk-subtitle {
+  font-family: Cardo;
+  font-weight: 400;
+  font-style: Italic;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #525252;
+}
+
+.idk-swiper-container {
+  width: 100%;
+  max-width: 1200px;
+  padding-bottom: 50px;
+}
+
+.idk-swiper {
+  width: 100%;
+  padding: 20px 0;
+}
+
+.idk-image-card {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1;
+  overflow: hidden;
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+}
+
+.idk-image-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.idk-instagram-handle {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 8px 15px;
+  border-radius: 4px;
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 14px;
+  color: #000000;
+  z-index: 10;
+}
+
+/* Swiper pagination customization */
+.idk-swiper-container .swiper-pagination {
+  position: relative;
+  margin-top: 30px;
+  bottom: 0;
+}
+
+.idk-swiper-container .swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  background-color: #d0d0d0;
+  border-radius: 2px;
+  opacity: 1;
+  margin: 0 4px;
+  transition: all 0.3s ease;
+}
+
+.idk-swiper-container .swiper-pagination-bullet-active {
+  width: 10px;
+  height: 10px;
+  background-color: #000000;
+}
+
+/* Swiper navigation buttons */
+.idk-swiper-container .swiper-button-next,
+.idk-swiper-container .swiper-button-prev {
+  color: #000000;
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.idk-swiper-container .swiper-button-next:after,
+.idk-swiper-container .swiper-button-prev:after {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.idk-swiper-container .swiper-button-next:hover,
+.idk-swiper-container .swiper-button-prev:hover {
+  background: rgba(255, 255, 255, 1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 992px) {
+  .idk-title {
+    font-size: 32px;
+  }
+
+  .idk-subtitle {
+    font-size: 16px;
+  }
+
+  .idk-swiper-container .swiper-button-next,
+  .idk-swiper-container .swiper-button-prev {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .idk-section {
+    padding: 60px 16px;
+  }
+
+  .idk-title {
+    font-size: 28px;
+  }
+
+  .idk-subtitle {
+    font-size: 15px;
+  }
+
+  .idk-swiper-container {
+    padding-bottom: 40px;
+  }
+}
+
